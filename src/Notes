@@ -1,0 +1,19 @@
+// // Home
+// //     -> Join -> Joincode -> Client -> Ir
+//                                 ^
+//                                 |
+// //     -> Host -> Hostinfo ->HostCode -> Admin
+//                                 |
+//                                \ /
+//                               backend -> home
+
+// done//i have to convert ir number to alphabet then figure out
+
+// have to add feature so that no two ir have same number
+// have to initialise random links
+// hosting
+// proper prop passing and href
+// in time and out time 
+// how to use 
+// about us
+// footer
