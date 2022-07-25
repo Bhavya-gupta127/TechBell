@@ -13,7 +13,7 @@ function HostCode(props) {
           Link :{" "}
           <a
             target="_blank"
-            href={"http://localhost:3000/" + props.code + "/client"}
+            href={"https://xiprot-techbell.herokuapp.com/" + props.code + "/client"}
           >
             https://xiprot-techbell.herokuapp.com/{props.code + "/client"}
           </a>
