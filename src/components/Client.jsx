@@ -12,8 +12,9 @@ function Client() {
     return <Ir ir={ir} name="bhavya" />;
   }
   // console.log(ir);
+  
   return (
-    <>
+    <div className="left-container">
       <div className="client_container">
         <div className="clinet_input">
           <h1>Enter your Interview Room Number :</h1>
@@ -29,11 +30,11 @@ function Client() {
       <a
         href={String.fromCharCode(parseInt(ir) + 64)}
         onClick={handleSubmit}
-        className="client_submit"
+        // className="client_submit"
       >
-        Submit
+        <button>Submit</button>
       </a>
-    </>
+    </div>
   );
 }
 

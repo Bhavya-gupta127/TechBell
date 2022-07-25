@@ -1,0 +1,25 @@
+.end_btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1em;
+    /* background-color: black; */
+}
+.ir_container{
+    border: 3px solid white;
+    padding: 130px;
+    border-radius: 100%;
+    background-color: rgba(10, 108, 194, 0.05); 
+}
+.ir_container:hover{
+    border: 4px solid white;
+    background-color: rgba(8, 237, 111, 0.244);
+    cursor: pointer;
+}
+
+
+.ir_container h1{
+ 
+    font-size: 4em;
+}
+

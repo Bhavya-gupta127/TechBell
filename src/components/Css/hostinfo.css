@@ -1,0 +1,17 @@
+.host_container{
+    /* border: 1px solid white; */
+    /* padding: 20px; */
+}
+.host_item{
+    margin: 1em 4em;
+    line-height: 1.8em;
+    text-align: left; 
+    font-weight: 600;
+
+}
+.host_submit{
+    position: relative;
+    right: 2em;
+    
+}
+

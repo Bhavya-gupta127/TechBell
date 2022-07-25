@@ -14,12 +14,11 @@ import Admin from "./Admin";
 import Client from "./Client";
 import JoinCode from "./JoinCode";
 import Ir from "./Ir";
-import Connector from "./Connector";
 
 //firebase
 import { ref, onValue } from "firebase/database";
 import database from "./firebaseConfig";
-import { async } from "@firebase/util";
+import Svgpart from "./Svgpart";
 
 function App() {
   const [codeobj, setCodeobj] = useState([]);
@@ -67,11 +66,13 @@ function App() {
     <div className="App">
       <Router>
         <Header />
+        <img src="/back4.jpg" alt="" className="backimg" />
         <Switch>
           <Route exact path="/">
             {/* <Link to="/hostinfo">host</Link>
             <Link to="/123456/admin">admin</Link> */}
             <Home />
+            <Svgpart />
             {/* <Connector /> */}
           </Route>
 
@@ -85,8 +86,8 @@ function App() {
 
           {/* <Route exact path={`/${123456}/admin`}>
             <Admin />
-          </Route>
-          <Route exact path={`/${111111}/admin`}>
+            </Route>
+            <Route exact path={`/${111111}/admin`}>
             <Admin />
           </Route> */}
 
@@ -94,13 +95,14 @@ function App() {
             return (
               <Route key={c} exact path={`/${c}/client`}>
                 <Client />
+                <Svgpart />
               </Route>
             );
           })}
           {/* <Route exact path={`/${123456}/client`}>
             <Client />
-          </Route>
-          <Route exact path={`/${111111}/client`}>
+            </Route>
+            <Route exact path={`/${111111}/client`}>
             <Client />
           </Route> */}
 
@@ -113,15 +115,17 @@ function App() {
           })}
           {/* <Route path={`/${123456}/*`}>
             <Ir />
-          </Route>
-          <Route path={`/${111111}/*`}>
+            </Route>
+            <Route path={`/${111111}/*`}>
             <Ir />
           </Route> */}
           <Route exact path="/hostinfo">
             <HostInfo />
+            <Svgpart />
           </Route>
           <Route exact path="/joincode">
             <JoinCode />
+            <Svgpart />
           </Route>
         </Switch>
       </Router>

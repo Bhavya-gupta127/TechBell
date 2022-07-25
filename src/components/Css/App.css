@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    /* background: var(--color-black-1); */
+    /* background-color: #B2C8DF; */
+    color :black;
+    /* background-image:"./back.jpg"; */
+}
+
+.backimg{
+    z-index: -2;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    height: 91vh;
+    width: 100vw;
+    position: absolute;
+    top: 9vh;
+    left: 0;
+    opacity: 40%;
+}
+.left-container{
+    /* border: 1px solid white; */
+    height: 91vh;
+    width: 50vw;
+    position: absolute;
+    top: 9vh;
+    left: 0;
+
+}
+@media (max-width: 865px) {
+    .left-container{
+        position:relative;
+        width: 100vw;
+    }
+
+}
+.code_container{
+    /* border: 1px solid white; */
+    padding: 20px;
+    margin: 20px;
+    line-height: 70px;
+}
+
+
+
+.App{
+    text-align: center;
+}
+
+.client_container{
+    /* border: 1px solid white; */
+    line-height: 70px;
+    margin: 30px;
+    padding: 60px;
+    /* border-radius: 100%; */
+    display: flex;
+}
+.client_container input{
+    font-size: 3em;
+    width: 5em;
+    text-align: center;
+}
+
+
+.client_submit{
+
+    font-size: 3em;    
+    background-color: aliceblue;
+    border-radius: 70%;
+    padding: 10px;
+    margin: 20px;
+}
+
+.codenumber{
+    width: 5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

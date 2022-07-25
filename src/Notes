@@ -2,7 +2,7 @@
 // //     -> Join -> Joincode -> Client -> Ir
 //                                 ^
 //                                 |
-// //     -> Host -> Hostinfo ->HostCode -> Admin
+// //     -> Host(create new session) -> Hostinfo ->HostCode -> Admin
 //                                 |
 //                                \ /
 //                               backend -> home
@@ -13,7 +13,12 @@
 // have to initialise random links
 // hosting
 // proper prop passing and href
-// in time and out time 
-// how to use 
+// in time and out time
+
+// Comment option to interviewr
+// raise flag option to interviewers for assist
+// how to use
 // about us
 // footer
+
+// http://localhost:3000/274235/admin

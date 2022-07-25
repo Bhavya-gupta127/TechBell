@@ -1,0 +1,20 @@
+
+.details_container{
+    display: flex;
+    font-size: 1.4em;
+    font-weight: 700;
+    color:#3ea5d1 ;
+}
+
+.college_name{
+    position: absolute; 
+    top: 11vh;
+    left: 0;
+    margin-left: 1em;
+}
+.company_name{
+    position: absolute; 
+    top: 11vh;
+    right: 0;
+    margin-right: 1em;
+}

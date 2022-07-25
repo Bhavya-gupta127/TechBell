@@ -11,7 +11,7 @@ function JoinCode() {
   function handleSubmit() {}
 
   return (
-    <>
+    <div className="left-container">
       <div className="client_container">
         <div className="clinet_input">
           <h1>Enter your Join Code :</h1>
@@ -21,18 +21,17 @@ function JoinCode() {
             className="codenumber"
             placeholder="0"
             value={code}
-            
           />
         </div>
       </div>
       <a
         href={"/" + code + "/client"}
         // onClick={handleSubmit}
-        className="client_submit"
+        // className="client_submit"
       >
-        Submit
+        <button>Submit</button>
       </a>
-    </>
+    </div>
   );
 }
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./hostinfo.css";
+import "./Css/hostinfo.css";
 import HostCode from "./HostCode";
 // import firebase from "../firebase";
 // import { getDatabase, ref, set } from "firebase/database";
@@ -25,6 +25,9 @@ function HostInfo() {
     setCode(temp);
     set(ref(db, `code/${temp}`), {
       temp,
+      college,
+      company,
+      rooms,
     });
   }
   function handleSubmit() {
@@ -66,21 +69,72 @@ function HostInfo() {
     setRooms(newval);
   }
   return (
-    <div>
+    <div className="left-container">
       {!isFilled && (
         <div className="host_container">
-          <h1>Create New Room :</h1>
-          <div className="host_item">
-            College Name :{" "}
-            <input
-              onChange={addCollege}
-              type="text"
-              placeholder="College Name "
-            />
+          <h1>Create New Session :</h1>
+
+          <form action="/action_page.php">
+            <div className="host_item">
+              <label htmlFor="organisation_name">
+                Inerviewee's organisation
+              </label>
+              <input
+                name="organisation_name"
+                onChange={addCollege}
+                type="text"
+                placeholder="Organisation Name "
+                size="40"
+              />
+            </div>
+            <div className="host_item">
+              <label htmlFor="organisation_name2">
+                Inerviewer's organisation
+              </label>
+              <input
+                name="organisation_name2"
+                onChange={addCompany}
+                type="text"
+                placeholder="organisation name"
+                size="40"
+              />
+            </div>
+            <div className="host_item">
+              <label htmlFor="irnumber">No. of interview rooms</label>
+              <input
+                name="irnumber"
+                onChange={addRooms}
+                type="text"
+                placeholder="1"
+                size="40"
+              />
+            </div>
+            {/* <div className="host_item">
+              <label htmlFor="pin">Create new a pin</label>
+              <input
+                required
+                name="pin"
+                id="pin"
+                onChange={addRooms}
+                type="text"
+                size="50"
+              />
+            </div> */}
+
+            {/* <input type="submit" onSubmit={handleSubmit} /> */}
+
+            <div className="host_submit">
+              <button type="submit" onClick={handleSubmit}>
+                submit
+              </button>
+            </div>
+          </form>
+
+          {/* <div className="host_item">
+            College Name : <input />
           </div>
           <div className="host_item">
-            Total Rooms :{" "}
-            <input onChange={addRooms} type="Number" placeholder="0" />
+            Total Rooms : <input />
           </div>
           <div className="host_item">
             Company Name :{" "}
@@ -91,8 +145,7 @@ function HostInfo() {
             />
           </div>
           <div className="host_submit">
-            <button onClick={handleSubmit}> Submit</button>
-          </div>
+          </div> */}
         </div>
       )}
       {isFilled && (

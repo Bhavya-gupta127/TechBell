@@ -1,7 +1,7 @@
 import React from "react";
 // import Admin from "./Admin";
 import { Link } from "react-router-dom";
-import "./hostinfo.css";
+import "./Css/hostinfo.css";
 function HostCode(props) {
   const adminlink = "http://localhost:3000/" + props.code;
 
@@ -20,8 +20,8 @@ function HostCode(props) {
         </h3>
         other sharing methods coming soon
       </div>
-      <a href={`${props.code}/admin`} className="a">
-        Admin page
+      <a href={`${props.code}/admin`}>
+        <button> Go to Admin contol</button>
       </a>
       {/* <Admin rooms={props.rooms} /> */}
     </div>

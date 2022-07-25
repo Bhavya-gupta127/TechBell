@@ -1,0 +1,38 @@
+.admin_container{
+    display: block;
+    
+}
+
+.active_container{
+    /* border: 2px solid black; */
+    width: 70vw;
+    box-shadow: blue;
+    position: relative;
+    top: 7vh;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+}
+.active{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.admin_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vw;
+    width: 8vw;
+    margin: 0.2em;
+    padding: 1em;
+    border: 1px solid rgb(104, 239, 8);
+    text-align: center;
+    border-radius: 100%;
+    background-color: rgba(22, 172, 32, 0.664);
+}
+.admin_text{
+    color: black;
+    font-size: 1.4vw;
+}
