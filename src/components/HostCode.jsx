@@ -15,7 +15,7 @@ function HostCode(props) {
             target="_blank"
             href={"http://localhost:3000/" + props.code + "/client"}
           >
-            http://localhost:3000/{props.code + "/client"}
+            https://xiprot-techbell.herokuapp.com/{props.code + "/client"}
           </a>
         </h3>
         other sharing methods coming soon
